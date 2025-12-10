@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.sidebar.title("Navigation")
 
-df = pd.read_csv("F:/DataSet/iris.csv")
+df = pd.read_csv("iris.csv")
 name = st.sidebar.text_input("Enter Your Name")
 the_section = st.sidebar.selectbox("Select The Section", ["Homepage","Dataset","Statistical Analysis", "Data Visualization"])
 
