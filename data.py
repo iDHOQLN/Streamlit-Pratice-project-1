@@ -6,14 +6,16 @@ import matplotlib.pyplot as plt
 st.sidebar.title("Navigation")
 
 df = pd.read_csv("F:/DataSet/iris.csv")
+name = st.sidebar.text_input("Enter Your Name")
 the_section = st.sidebar.selectbox("Select The Section", ["Homepage","Dataset","Statistical Analysis", "Data Visualization"])
 
 if the_section == "Homepage":
     st.header("Data Analysis on iris dataset")
+    st.write(f"Hello {name}")
     st.subheader("Select Section")
 
 if the_section == "Dataset":
-      st.write(df.head())
+    st.write(df.head())
 
 if the_section == "Statistical Analysis":
     st.subheader("Statistical Analysis")
